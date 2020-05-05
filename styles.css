@@ -1,7 +1,7 @@
  
 /********** Basic styles **********/*
 
- {
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,9 +12,11 @@ h1 {
   text-align: center;
   font-family: arial, sans-serif;
 }
+
 #menu {
   font-size: 80px;
 }
+
 section h1{
   position: static;
   text-align: left;
@@ -27,26 +29,33 @@ section {
 }
 
 #chicken {
-  background-color: #ffb3b2;
+  background-color: rgb(213,152,152);
+  position: relative;
+  margin-left: 140px;
+  text-align: center;
 }
 
 #beef {
-  background-color: #ff2343;
+  background-color: rgb(193,69,66); # extension colorpicker sur brave-chrome
+  position: relative;
+  margin-left: 140px;
+  text-align: center;
+  color: white;
 }
 
 #sushi {
-  background-color: #ffcc56;
+  background-color: rgb(229,209,152);
+  position: relative;
+  margin-left: 140px;
+  text-align: center;
 }
 
 p {
   text-align: center;
   display: inline;
-  width: 100%;
-  height: auto;
   margin-right: auto;
   margin-left: auto;
   font-family: arial, sans-serif;
-  float: center;
   margin-right: 10px;
   padding: 10px;
 }
@@ -55,6 +64,7 @@ p {
   margin-right: 30px;
   margin-top: 15px;
   position : relative;
+  text-align: left;
 }
 
 #p2 {
@@ -76,24 +86,25 @@ p {
   position: relative;
   left: 50px;
   top : 0px;
-
 }
+
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1 {                  /* Créer d'autres classes lg-2.. lg-n si besoin pour items spécifiques */
     float: left;
-    border: 10px solid black;
+    border: 3px solid black;
     background-color: #d1e0e0;
   }
   .col-lg-1 {
     width: 29%;
   }
+
 }
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1 {
     float: left;
-    border: 5px solid black;
+    border: 3px solid black;
     background-color: #d1e0e0;
   }
   .col-md-1 {
@@ -105,6 +116,13 @@ p {
     position: relative;
     width: 93%;
   }
+
+  #sushi {
+    position: relative;
+    margin-left: 75%;
+    text-align: center;
+
+  }
 }
 
 /********** Small devices only **********/
@@ -112,7 +130,7 @@ p {
 @media (max-width:767px) {
   .col-sm-1 {
     float: left;
-    border: 5px solid black;
+    border: 3px solid black;
     background-color: #d1e0e0;
   }
   .col-sm-1 {
@@ -123,4 +141,15 @@ p {
     box-sizing: border-box;
     position: relative;
     width: 93%;
+  }
+  #chicken {
+    margin-left: 280px;
+  }
+
+  #beef {
+    margin-left: 280px;
+  }
+  #sushi {
+    margin-left: 280px;
+  }
 }
